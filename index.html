@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Моя жива афіша</title>
+<style>
+  body {
+    background: #fff8e6;
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+    padding: 30px;
+  }
+  h1 { color: #fce300; }
+  img {
+    width: 400px;
+    max-width: 90%;
+    border-radius: 16px;
+    animation: appear 2s ease-out;
+  }
+  @keyframes appear {
+    from { opacity: 0; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  .card { background: white; padding: 20px;
+          border-radius: 20px; display: inline-block; }
+  .button { display: inline-block; background: #00aaff;
+            color: white; text-decoration: none;
+            padding: 12px 22px; border-radius: 12px;
+            transition: background 0.3s, transform 0.3s; }
+  .button:hover { background: #fcf803; color: black transform: scale(1.08); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Моя жива афіша ✨</h1>
+    <p>Я запрошую вас у світ творчості!</p>
+    <img src="poster.png" alt="Моя власна афіша">
+    <p>Анімація робить сторінку цікавішою.</p>
+    <a class="button" href="#">Дізнатися більше</a>
+  </div>
+</body>
+</html>
